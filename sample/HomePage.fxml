@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="800.0" style="-fx-background-color: #0EACD7;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="800.0" style="-fx-background-color: #10809F;">
+         <children>
+            <Label layoutX="268.0" layoutY="24.0" text="SAVERA LODGE" textFill="#eeeded" underline="true">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox layoutY="100.0" prefHeight="437.0" prefWidth="145.0" spacing="100.0" style="-fx-background-color: #10809F;" AnchorPane.topAnchor="100.0">
+         <children>
+            <JFXButton fx:id="newbtn" onAction="#newButtonPushed" onKeyPressed="#newButtonkeypressed" prefHeight="30.0" prefWidth="145.0" ripplerFill="#10809f" style="-fx-background-color: #0EACD7; -fx-background-radius: 2EM;" text="NEW">
+               <graphic>
+                  <MaterialDesignIconView glyphName="BORDER_COLOR" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="showEntriesbtn" onAction="#showEntryButtonPushed" onKeyPressed="#showentrykeypressed" prefHeight="30.0" prefWidth="145.0" ripplerFill="#10809f" style="-fx-background-color: #0EACD7; -fx-background-radius: 2EM;" text="SHOW ENTRIES">
+               <graphic>
+                  <MaterialDesignIconView glyphName="LAPTOP_CHROMEBOOK" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#closetheHomePage" onKeyPressed="#closetheHomeKeypressed" prefHeight="30.0" prefWidth="145.0" ripplerFill="#10809f" style="-fx-background-color: #0EACD7; -fx-background-radius: 2EM;" text="CLOSE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView glyphName="CLOSE" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <ImageView fitHeight="500.0" fitWidth="655.0" layoutX="145.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ad/Image1.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

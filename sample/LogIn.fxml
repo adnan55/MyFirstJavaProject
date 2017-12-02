@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0EACD7;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LogInController">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #10809F;">
+         <children>
+            <Label layoutX="84.0" layoutY="37.0" text="WELCOME TO HOTEL  MANAGEMENT LOGIN PAGE" textFill="#eeecec" underline="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="usernametf" focusColor="#010a25" layoutX="233.0" layoutY="124.0" promptText="Enter UserName" />
+      <JFXPasswordField fx:id="passwordtf" focusColor="#020a22" layoutX="233.0" layoutY="175.0" promptText="Enter Password" />
+      <JFXButton fx:id="loginbtn" layoutX="166.0" layoutY="225.0" onAction="#loginButtonPushed" onKeyPressed="#loginkeypressed" prefHeight="25.0" prefWidth="135.0" ripplerFill="#0eacd7" style="-fx-background-color: #10809F; -fx-background-radius: 2em;" text="LogIn">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="cancelbtn" layoutX="324.0" layoutY="225.0" onAction="#cancelbtnpushed" onKeyPressed="#cancelkeypressed" prefHeight="25.0" prefWidth="135.0" ripplerFill="#0eacd7" style="-fx-background-color: #10809F; -fx-background-radius: 2em;" text="Cancel">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="messagelbl" layoutX="205.0" layoutY="298.0" prefHeight="17.0" prefWidth="200.0" textFill="#e40d0d" wrapText="true" />
+   </children>
+</AnchorPane>

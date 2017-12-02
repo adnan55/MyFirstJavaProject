@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.showentrycontroller">
+   <children>
+      <ScrollPane fx:id="sp" fitToHeight="true" prefHeight="396.0" prefWidth="404.0">
+         <content>
+            <TableView fx:id="showentrytable2" prefHeight="396.0" prefWidth="2777.0" stylesheets="@file.css">
+              <columns>
+                <TableColumn fx:id="fullnamecolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="Full Name" />
+                  <TableColumn fx:id="fathersnamecolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="Father's Name" />
+                  <TableColumn fx:id="agecolumn" prefWidth="62.0" resizable="false" text="Age" />
+                  <TableColumn fx:id="gendercolumn" prefWidth="75.0" resizable="false" text="Gender" />
+                  <TableColumn fx:id="occupationcolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="Occupation" />
+                  <TableColumn fx:id="idproofcolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="ID Proof" />
+                  <TableColumn fx:id="idnocolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="ID No." />
+                  <TableColumn fx:id="statecolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="State" />
+                  <TableColumn fx:id="citycolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="City/Village" />
+                  <TableColumn fx:id="nationalitycolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="Nationality" />
+                  <TableColumn fx:id="mobilenocolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="Mobile No." />
+                  <TableColumn fx:id="pincodecolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="Pincode" />
+                  <TableColumn fx:id="noofpersoncolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="No.of Person" />
+                  <TableColumn fx:id="roomtypecolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="Room Type(if any)" />
+                  <TableColumn fx:id="noofbedcolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="No.of Room/Bed Alloted" />
+                  <TableColumn fx:id="roomnocolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="Room/Bed No." />
+                  <TableColumn fx:id="checkindatecolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="CheckIn Date" />
+                  <TableColumn fx:id="checkoutdatecolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="CheckOut Date" />
+                  <TableColumn fx:id="checkintimecolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="CheckIn Time" />
+                  <TableColumn fx:id="checkouttimecolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="CheckOut Time" />
+                  <TableColumn fx:id="totalpaymentcolumn" minWidth="130.0" prefWidth="130.0" resizable="false" text="Total Payment" />
+                  <TableColumn fx:id="paymentmadebycolumn" minWidth="130.0" prefWidth="170.0" resizable="false" text="Payment &amp; Entry  Made By" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Pane prefHeight="81.0" prefWidth="705.0">
+         <children>
+            <JFXButton layoutY="23.0" onAction="#newentrybuttonpressed" prefHeight="36.0" prefWidth="166.0" style="-fx-background-radius: 2em; -fx-background-color: #0EACD7;" text="ADD NEW ENTRY">
+               <graphic>
+                  <MaterialDesignIconView glyphName="PLUS" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="539.0" layoutY="23.0" onAction="#backtohomebuttonpressed" prefHeight="36.0" prefWidth="166.0" style="-fx-background-radius: 2em; -fx-background-color: #0EACD7;" text="BACK TO HOMEPAGE">
+               <graphic>
+                  <MaterialDesignIconView glyphName="CHEVRON_LEFT" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="251.0" layoutY="23.0" onAction="#showbtnpushed" prefHeight="36.0" prefWidth="166.0" style="-fx-background-color: #0EACD7; -fx-background-radius: 2em;" text="SHOW">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+         </children>
+      </Pane>
+   </children>
+</VBox>

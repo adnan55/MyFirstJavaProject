@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #0EACD7;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GuestDetailController">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="1000.0" style="-fx-background-color: #10809F;">
+         <children>
+            <Label layoutX="384.0" layoutY="24.0" text="Guest's Detail" textFill="#f8f8f8" underline="true">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="fullnametf" cache="true" focusColor="#1e1e1e" labelFloat="true" layoutX="109.0" layoutY="119.0" prefHeight="25.0" prefWidth="402.0" />
+      <JFXTextField fx:id="addresstf" cache="true" focusColor="#1e1e1e" labelFloat="true" layoutX="109.0" layoutY="172.0" prefHeight="25.0" prefWidth="402.0" />
+      <JFXTextField fx:id="agetf" cache="true" focusColor="#1e1e1e" labelFloat="true" layoutX="613.0" layoutY="120.0" prefHeight="25.0" prefWidth="104.0" />
+      <JFXTextField fx:id="occupationtf" cache="true" focusColor="#1e1e1e" labelFloat="true" layoutX="851.0" layoutY="119.0" />
+      <JFXComboBox fx:id="genderComboBox" focusColor="#010617" layoutX="614.0" layoutY="172.0" prefHeight="25.0" prefWidth="135.0" />
+      <JFXComboBox fx:id="idtypeComboBox" focusColor="#010617" layoutX="851.0" layoutY="172.0" prefHeight="25.0" prefWidth="135.0" />
+      <JFXTextField fx:id="idtf" cache="true" focusColor="#1e1e1e" labelFloat="true" layoutX="614.0" layoutY="228.0" prefHeight="25.0" prefWidth="325.0" />
+      <Label layoutX="767.0" layoutY="176.0" prefHeight="17.0" prefWidth="66.0" text="ID Type" />
+      <JFXComboBox fx:id="stateComboBox" focusColor="#010617" layoutX="109.0" layoutY="228.0" prefHeight="25.0" prefWidth="402.0" />
+      <JFXTextField fx:id="citytf" cache="true" focusColor="#1e1e1e" labelFloat="true" layoutX="109.0" layoutY="288.0" />
+      <JFXTextField fx:id="nationalitytf" cache="true" focusColor="#2a2b2c" labelFloat="true" layoutX="383.0" layoutY="288.0" />
+      <JFXTextField fx:id="mobilenotf" cache="true" focusColor="#1e1e1e" labelFloat="true" layoutX="109.0" layoutY="345.0" />
+      <JFXTextField fx:id="pincodetf" cache="true" focusColor="#2a2b2c" labelFloat="true" layoutX="383.0" layoutY="345.0" />
+      <VBox layoutX="11.0" layoutY="132.0" spacing="40.0">
+         <children>
+            <Label text="Guest Name" />
+            <Label text="Address" />
+            <Label text="State" />
+            <Label text="City/Village" />
+            <Label text="Mobile No." />
+         </children>
+      </VBox>
+      <Label layoutX="292.0" layoutY="297.0" text="Nationality" />
+      <Label layoutX="292.0" layoutY="354.0" text="Pincode" />
+      <VBox layoutX="548.0" layoutY="129.0" spacing="35.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="70.0" text="Age" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Gender" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="ID Number" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Room/Bed" />
+            <Label prefWidth="70.0" text="No.of Person" />
+            <Label prefWidth="71.0" text="CheckIn Date" />
+            <Label text="CheckIn Time" />
+         </children>
+      </VBox>
+      <Label layoutX="767.0" layoutY="132.0" prefHeight="17.0" prefWidth="66.0" text="Occupation" />
+      <JFXComboBox fx:id="roomComboBox" focusColor="#010617" layoutX="626.0" layoutY="276.0" prefHeight="25.0" prefWidth="104.0" />
+      <JFXComboBox fx:id="roomtypeComboBox" focusColor="#010617" layoutX="834.0" layoutY="276.0" prefHeight="25.0" prefWidth="104.0" />
+      <VBox layoutX="749.0" layoutY="285.0" spacing="35.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="66.0" text="Room Type" />
+            <Label text="Room/Bed No." />
+            <Label text="CheckOut Date" />
+         </children>
+      </VBox>
+      <JFXTextField fx:id="noofpersontf" cache="true" focusColor="#2a2b2c" labelFloat="true" layoutX="626.0" layoutY="333.0" prefHeight="25.0" prefWidth="104.0" />
+      <JFXTextField fx:id="roomnotf" cache="true" focusColor="#2a2b2c" labelFloat="true" layoutX="835.0" layoutY="333.0" prefHeight="25.0" prefWidth="104.0" />
+      <JFXDatePicker fx:id="checkindatedp" defaultColor="#111414" layoutX="634.0" layoutY="387.0" prefHeight="25.0" prefWidth="104.0" />
+      <JFXDatePicker fx:id="checkoutdatedp" defaultColor="#111414" layoutX="845.0" layoutY="387.0" prefHeight="25.0" prefWidth="104.0" />
+      <Label layoutX="749.0" layoutY="439.0" text="CheckOut Time" />
+      <JFXTimePicker fx:id="checkintimetp" defaultColor="#101111" layoutX="634.0" layoutY="435.0" prefHeight="25.0" prefWidth="104.0" />
+      <JFXTimePicker fx:id="checkouttimetp" defaultColor="#101111" layoutX="851.0" layoutY="435.0" prefHeight="25.0" prefWidth="104.0" />
+      <JFXTextField fx:id="roomchargetf" cache="true" focusColor="#2a2b2c" labelFloat="true" layoutX="145.0" layoutY="435.0" prefHeight="25.0" prefWidth="104.0" />
+      <Label layoutX="11.0" layoutY="440.0" text="Per Room/Bed Charge" />
+      <JFXTextField fx:id="noofroomtf" cache="true" focusColor="#2a2b2c" labelFloat="true" layoutX="414.0" layoutY="436.0" prefHeight="25.0" prefWidth="104.0" />
+      <Label layoutX="291.0" layoutY="440.0" text="Number of Room/Bed" />
+      <JFXTextField fx:id="totalpaymenttf" cache="true" focusColor="#2a2b2c" labelFloat="true" layoutX="148.0" layoutY="485.0" prefHeight="25.0" prefWidth="104.0" />
+      <Label layoutX="14.0" layoutY="490.0" text="Total Payment" />
+      <Label layoutX="292.0" layoutY="490.0" text="Payment Made By" />
+      <JFXTextField fx:id="paymentmadebytf" cache="true" focusColor="#2a2b2c" labelFloat="true" layoutX="414.0" layoutY="486.0" prefHeight="25.0" prefWidth="104.0" />
+      <JFXButton layoutX="212.0" layoutY="556.0" onAction="#saveit" prefHeight="30.0" prefWidth="165.0" ripplerFill="#0eacd7" style="-fx-background-color: #10809F; -fx-background-radius: 2EM;" text="SAVE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <MaterialDesignIconView glyphName="CHEVRON_RIGHT" />
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="395.0" layoutY="556.0" onAction="#clearbtnpushed" prefWidth="165.0" ripplerFill="#0eacd7" style="-fx-background-color: #10809F; -fx-background-radius: 2EM;" text="CLEAR">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <MaterialDesignIconView glyphName="REFRESH" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="backtoHomebtn" layoutX="584.0" layoutY="556.0" onAction="#BacktoHomeButtonPushed" prefWidth="165.0" ripplerFill="#0eacd7" style="-fx-background-color: #10809F; -fx-background-radius: 2EM;" text="BACK TO HOME">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <MaterialDesignIconView glyphName="CHEVRON_LEFT" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
